@@ -1,0 +1,19 @@
+{
+    "name": "eneas/fizzbuzz-hyper-doping",
+    "type": "project",
+    "require": {
+        "phpunit/phpunit": "^6.4"
+    },
+    "authors": [
+        {
+            "name": "eneas",
+            "email": "eneas_vva@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "eneas\\": "src/",
+            "eneas\\tests\\": "tests/"
+        }
+    }
+}

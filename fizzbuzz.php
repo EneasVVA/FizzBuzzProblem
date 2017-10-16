@@ -1,13 +1,14 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: eneas
+ * Date: 16/10/2017
+ * Time: 22:37
+ */
 
-$answers = ['100' => 'Fizz', '010' => 'Buzz', '111' => 'FizzBuzz'];
+require_once __DIR__.'/vendor/autoload.php';
 
-for($i = 1; $i <= 100; $i++)
-{
-    $value = intval(($i % 3) == 0) . intval(($i % 5) == 0) . intval(($i % 15) == 0);
+$fizzBuzz = new \eneas\FizzBuzz();
 
-    $result = $answers[$value] ?? $i;
-
-    print $result . PHP_EOL;
-
-}
+$result = $fizzBuzz->multiResolve(1, 100);
+print implode(PHP_EOL, $result);
